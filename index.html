@@ -3,173 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Resource Portal: GenderMag Method</title>
+    <title>GenderMag Student Reference Portal</title>
     <style>
-        /* Modern, clean layout theme */
         body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #2c3e50;
-            background-color: #f8f9fa;
-        }
-
-        /* Top Navigation Header */
-        header {
-            background-color: #34495e;
-            color: #ffffff;
-            padding: 1.5rem 2rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.8rem;
-        }
-        header p {
-            margin: 5px 0 0 0;
-            opacity: 0.8;
-            font-size: 1rem;
-        }
-
-        /* Main Workspace Container */
-        main {
-            max-width: 1000px;
-            margin: 30px auto;
+            max-width: 800px;
+            margin: 40px auto;
             padding: 0 20px;
-            margin-bottom: 80px; /* Space for fixed footer */
+            color: #333;
         }
-
-        /* Notice / Disclaimer Card */
-        .copyright-notice {
-            background-color: #e8f4fd;
-            border-left: 5px solid #3498db;
-            padding: 15px 20px;
-            border-radius: 4px;
-            margin-bottom: 30px;
-            font-size: 0.95rem;
+        header {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
-
-        /* Tool Grid layout */
-        .tool-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-top: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .tool-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Individual Tool Interactive Box Workspace */
-        .tool-card {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 25px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-        }
-        .tool-card h2 {
-            color: #2c3e50;
-            margin-top: 0;
-            border-bottom: 2px solid #edf2f7;
-            padding-bottom: 10px;
-        }
-
-        /* Interactive Element Placeholder (For Sliders/Widgets) */
-        .interactive-container {
-            background-color: #f7fafc;
-            border: 2px dashed #cbd5e0;
-            border-radius: 6px;
-            padding: 40px 20px;
-            text-align: center;
-            margin-top: 15px;
-            color: #718096;
-            font-style: italic;
-        }
-
-        /* Utility button style */
-        .external-link {
-            display: inline-block;
-            margin-top: 15px;
-            color: #3498db;
-            text-decoration: none;
+        nav a {
             font-weight: bold;
+            color: #0066cc;
+            text-decoration: none;
         }
-        .external-link:hover {
+        nav a:hover {
             text-decoration: underline;
         }
-
-        /* Compact Sticky Footer */
-        footer {
-            text-align: center;
+        .disclaimer-box {
+            background-color: #f4f4f4;
+            border-left: 4px solid #666;
             padding: 15px;
-            background-color: #34495e;
-            color: #ffffff;
-            font-size: 0.85rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Banner -->
     <header>
-        <h1>GenderMag Evaluation Learning Hub</h1>
-        <p>A specialized companion portal for class exercises and student analysis.</p>
+        <h1>GenderMag Student Portal</h1>
+        <nav>
+            <!-- Navigation link to the future slider page -->
+            <a href="slider.html">Go to Cognitive Styles Slider Page &rarr;</a>
+        </nav>
     </header>
 
     <main>
-        <!-- Mandatory Attribution Panel -->
-        <div class="copyright-notice">
-            <strong>Copyright & Reference Notice:</strong> All concepts, underlying methodologies, and original tools belong entirely to the <strong><a href="https://gendermag.org/" target="_blank">GenderMag Project</a></strong>. This interface is created solely for classroom instructional access to support student workflows.
-        </div>
+        <p>Welcome! This website has been created specifically as a reference guide for students to use during course exercises.</p>
 
-        <section>
-            <p>Welcome, students. Use this simplified workspace to interact with the designated calculation modules and sliders during your software usability evaluation labs.</p>
-        </section>
-
-        <!-- Tools Integration Grid Workspace -->
-        <div class="tool-grid">
-            
-            <!-- Tool Item 1: Interactive Slider Widget -->
-            <article class="tool-card">
-                <h2>Tool 1: Facet Selection & Slider</h2>
-                <p>Use this interactive area to slide and weigh different evaluation facet values during your team analysis session.</p>
-                
-                <!-- PLACEHOLDER: Paste or build your custom JavaScript slider code right here -->
-                <div class="interactive-container">
-                    [Copilot Hint: Place your &lt;input type="range"&gt; slider code or embedded tool framework inside this block]
-                </div>
-                
-                <a href="https://gendermag.org/" target="_blank" class="external-link">View official reference &rarr;</a>
-            </article>
-
-            <!-- Tool Item 2: Secondary Evaluation Utility -->
-            <article class="tool-card">
-                <h2>Tool 2: Recorder Asset Integration</h2>
-                <p>Access your primary evaluation template guides, input matrix elements, or checklist criteria fields below.</p>
-                
-                <!-- PLACEHOLDER: Paste your second educational tool configuration here -->
-                <div class="interactive-container">
-                    [Copilot Hint: Insert your secondary input fields, text areas, or quiz selectors here]
-                </div>
-                
-                <a href="https://gendermag.org/" target="_blank" class="external-link">Visit original site &rarr;</a>
-            </article>
-
+        <!-- Attribution and Copyright Disclaimer -->
+        <div class="disclaimer-box">
+            <p><strong>Please Note:</strong> This site and its contents are not mine. All foundational materials, methodologies, and original tools belong entirely to the GenderMag Project. For complete documentation, research, and official guidelines, please visit the official page at <a href="https://gendermag.org/" target="_blank">https://gendermag.org/</a>.</p>
         </div>
     </main>
-
-    <!-- Project Credit Footer -->
-    <footer>
-        <p>Classroom Support Portal &bull; References & Content Assets &copy; The GenderMag Project.</p>
-    </footer>
 
 </body>
 </html>
