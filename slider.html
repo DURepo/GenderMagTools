@@ -1,5 +1,8 @@
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Cognitive Styles Slider</title>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Cognitive Styles Slider</title>
 <meta name="author" content="Lara Letaw, Pam Van Londen, others">
 <style>
     .definition {text-decoration:underline;}
@@ -11,7 +14,7 @@
         font-size:1em;
         padding:.5%;
         line-height:1.4;
-        }
+    }
     #cogsliders h5, h6 {margin:1.6% 0 0 0}
     #cogsliders h5 {font-size:150%;}
     #cogsliders h6 {font-size:110%;}
@@ -39,7 +42,7 @@
         margin:0 0 1em 0;
         padding-left: 1em;
         font-weight:bold;
-        }
+    }
 
     input[type=range]:focus {outline: none;}
     output {
@@ -48,7 +51,6 @@
         margin:0;
         font-weight:bold;
     }
-
 
     .smaller {font-size:1em;}
 
@@ -62,41 +64,38 @@
         opacity: 0.7;
         -webkit-transition: .2s;
         transition: opacity .2s;
-        }
+    }
 
     .slider:hover {
         opacity: 1;
-        -moz-box-shadow: 0 0 12px #999;/*FF 3.5+*/
-        -webkit-box-shadow: 0 0 12px #999;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
-        box-shadow: 0 0 12px #999;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
-        }
+        -moz-box-shadow: 0 0 12px #999;
+        -webkit-box-shadow: 0 0 12px #999;
+        box-shadow: 0 0 12px #999;
+    }
 
+    /* SVG Neutral Face Custom Knob Styling */
     .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 50px;
-        height: 50px;
-        border-radius:50%;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
         border: 2px solid orange;
-        background: url('cognitive-styles-emoji-neutral-2.png');
-        background-size:cover;
+        background: white url("data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23FFD233' stroke='%23C34500' stroke-width='1'/><circle cx='35' cy='42' r='6' fill='%23333'/><circle cx='65' cy='42' r='6' fill='%23333'/><line x1='30' y1='68' x2='70' y2='68' stroke='%23333' stroke-width='6' stroke-linecap='round'/></svg>") no-repeat center;
+        background-size: 85%;
         cursor: pointer;
-        -moz-box-shadow: 0 0 12px #999;/*FF 3.5+*/
-        -webkit-box-shadow: 0 0 12px #999;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
-        box-shadow: 0 0 12px #999;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+        box-shadow: 0 0 12px #999;
     }
 
     .slider::-moz-range-thumb {
-        width: 50px;
-        height: 50px;
-        border-radius:50%;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
         border: 2px solid orange;
-        background: url('cognitive-styles-emoji-neutral-2.png');
-        background-size:cover;
+        background: white url("data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23FFD233' stroke='%23C34500' stroke-width='1'/><circle cx='35' cy='42' r='6' fill='%23333'/><circle cx='65' cy='42' r='6' fill='%23333'/><line x1='30' y1='68' x2='70' y2='68' stroke='%23333' stroke-width='6' stroke-linecap='round'/></svg>") no-repeat center;
+        background-size: 85%;
         cursor: pointer;
-        -moz-box-shadow: 0 0 12px #919191;/*FF 3.5+*/
-        -webkit-box-shadow: 0 0 12px #919191;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
-        box-shadow: 0 0 12px #919191;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+        box-shadow: 0 0 12px #919191;
     }
     
     .masonry {	  
@@ -108,7 +107,7 @@
         display: -webkit-box;
         display: flex;
     }
-    .masonry figure { /* design each set */
+    .masonry figure { 
         border:1px solid gray;
         border-radius:5px;
         box-shadow:2px 2px 10px gray;
@@ -127,25 +126,23 @@
         color:#C34500;
         font-size:130%; 
         padding:0 2%;
-        
     }
     
     .masonry figcaption {padding:0 2%;}
     .masonry img {
-          /* Just in case there are inline attributes */
-          width: 100%;
-          height: auto;
-          border-top-left-radius:5px;
-          border-top-right-radius:5px;
-        }
+        width: 100%;
+        height: auto;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+    }
 
     .column {
-      float: left;
-      padding: 10px;
+        float: left;
+        padding: 10px;
     }
 
     .left, .right {
-      width: 25%;
+        width: 25%;
     }
 
     .left {
@@ -157,36 +154,37 @@
     }
 
     .middle {
-      width: 280px;
+        width: 280px;
     }
 
     .row:after {
-      content: "";
-      display: table;
-      clear: both;
+        content: "";
+        display: table;
+        clear: both;
     }
 
-    /* Style rule for new visible author text and back button */
+    /* Style rule for new visible author text and portal back button */
     .header-navigation {
         margin-bottom: 25px;
         font-family: Arial, sans-serif;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 15px;
     }
     .author-line {
-        font-size: 0.9em;
+        font-size: 0.95em;
         color: #555;
-        margin: 5px 0 15px 0;
+        margin: 5px 0 0 0;
     }
     .back-link {
         color: #0066cc;
         text-decoration: none;
         font-weight: bold;
+        font-size: 0.95em;
     }
     .back-link:hover {
         text-decoration: underline;
     }
-
 </style>
-
 </head>
 <body>
 <section id="cogsliders">
@@ -198,60 +196,63 @@
         <p class="author-line"><strong>Authors:</strong> Lara Letaw, Pam Van Londen, others</p>
     </div>
 
-<!-- Information processing style -->
-    <fieldset class="slidecontainer">
-        <legend title="Approach new tasks analytically or intuitively.">1. Information Processing Style</legend> 
-        <p>When using technology, I prefer to process information...</p>
-        <div class="row">
-          <div class="column left">Selectively</div>
-          <div class="column middle"><input class="slider" type="range" min="-10" max="10" value="0" step="1" list="ticks"></div>
-          <div class="column right">Comprehensively</div>
-        </div>
-    </fieldset>
+    <form>
+        <!-- 1. Information processing style -->
+        <fieldset class="slidecontainer">
+            <legend title="Approach new tasks analytically or intuitively.">1. Information Processing Style</legend> 
+            <p>When using technology, I prefer to process information...</p>
+            <div class="row">
+              <div class="column left">Selectively</div>
+              <div class="column middle"><input class="slider" type="range" min="-10" max="10" value="0" step="1"></div>
+              <div class="column right">Comprehensively</div>
+            </div>
+        </fieldset>
 
+        <!-- 2. Learning style for new technology -->
+        <fieldset class="slidecontainer">
+            <legend title="How one goes about learning a new skill or app.">2. Learning Style</legend>
+            <p>When learning a new technology, I prefer to...</p>
+            <div class="row">
+              <div class="column left">Tinker</div>
+              <div class="column middle"><input class="slider" type="range" min="-10" max="10" value="0" step="1"></div>
+              <div class="column right">Follow processes</div>
+            </div>
+        </fieldset>
 
-<!-- Learning style for new technology -->
-    <fieldset class="slidecontainer">
-        <legend title="How one goes about learning a new skill or app.">2. Learning Style</legend>
-        <p>When learning a new technology, I prefer to...</p>
-        <div class="row">
-          <div class="column left">Tinker</div>
-          <div class="column middle"><input class="slider" type="range" min="-10" max="10" value="0" step="1" list="ticks"></div>
-          <div class="column right">Follow processes</div>
-        </div>
-    </fieldset>
+        <!-- 3. Computer self-efficacy -->
+        <fieldset class="slidecontainer">
+            <legend title="Judgment of one's own computer capabilities.">3. Computer Self-efficacy</legend>
+            <p>My confidence level when learning new tech skills is...</p>
+            <div class="row">
+              <div class="column left">High</div>
+              <div class="column middle"><input class="slider" type="range" min="-10" max="10" value="0" step="1"></div>
+              <div class="column right">Low</div>
+            </div>
+        </fieldset>
 
-<!-- Computer self-efficacy -->
-    <fieldset class="slidecontainer">
-        <legend title="Judgment of one's own computer capabilities.">3. Computer Self-efficacy</legend>
-        <p>My confidence level when learning new tech skills is...</p>
-        <div class="row">
-          <div class="column left">High</div>
-          <div class="column middle"><input class="slider" type="range" min="-10" max="10" value="0" step="1" list="ticks"></div>
-          <div class="column right">Low</div>
-        </div>
-    </fieldset>
+        <!-- 4. Attitudes towards risk -->
+        <fieldset class="slidecontainer">
+            <legend title="Subconscience ideas towards uncertain tasks.">4. Attitude Toward Risk</legend>
+            <p>When a feature is unfamiliar to me, I...</p>
+            <div class="row">
+              <div class="column left">Don't mind</div>
+              <div class="column middle"><input class="slider" type="range" min="-10" max="10" value="0" step="1"></div>
+              <div class="column right">Prefer not to use it</div>
+            </div>
+        </fieldset>   
+        
+        <!-- 5. Motivations -->
+        <fieldset class="slidecontainer">
+            <legend title="Intrinsic or external desires to learn a new skill.">5. Motivations</legend>
+            <p>What motivates me to use a technology is...</p>
+            <div class="row">
+              <div class="column left">I enjoy it</div>
+              <div class="column middle"><input class="slider" type="range" min="-10" max="10" value="0" step="1"></div>
+              <div class="column right">Completing a task</div>
+            </div>
+        </fieldset>  
+    </form>
 
-<!-- Attitudes towards risk -->
-    <fieldset class="slidecontainer">
-        <legend title="Subconscience ideas towards uncertain tasks.">4. Attitude Toward Risk</legend>
-        <p>When a feature is unfamiliar to me, I...</p>
-        <div class="row">
-          <div class="column left">Don't mind</div>
-          <div class="column middle"><input class="slider" type="range" min="-10" max="10" value="0" step="1" list="ticks"></div>
-          <div class="column right">Prefer not to use it</div>
-        </div>
-    </fieldset>   
-    
-<!-- Motivations -->
-    <fieldset class="slidecontainer">
-        <legend title="Intrinsic or external desires to learn a new skill.">5. Motivations</legend>
-        <p>What motivates me to use a technology is...</p>
-        <div class="row">
-          <div class="column left">I enjoy it</div>
-          <div class="column middle"><input class="slider" type="range" min="-10" max="10" value="0" step="1" list="ticks"></div>
-          <div class="column right">Completing a task</div>
-        </div>
-    </fieldset>  
-
-</section></body></html>
+</section>
+</body>
+</html>
