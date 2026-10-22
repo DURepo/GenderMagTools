@@ -166,12 +166,37 @@
       clear: both;
     }
 
+    /* Style rule for new visible author text and back button */
+    .header-navigation {
+        margin-bottom: 25px;
+        font-family: Arial, sans-serif;
+    }
+    .author-line {
+        font-size: 0.9em;
+        color: #555;
+        margin: 5px 0 15px 0;
+    }
+    .back-link {
+        color: #0066cc;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
 </style>
 
 </head>
 <body>
 <section id="cogsliders">
 
+    <!-- Visible Author Attribution and Navigation Section -->
+    <div class="header-navigation">
+        <a href="index.html" class="back-link">&larr; Back to Student Portal Home</a>
+        <h2 style="margin: 15px 0 0 0; color: #C34500;">Cognitive Styles Slider Workspace</h2>
+        <p class="author-line"><strong>Authors:</strong> Lara Letaw, Pam Van Londen, others</p>
+    </div>
 
 <!-- Information processing style -->
     <fieldset class="slidecontainer">
@@ -228,7 +253,5 @@
           <div class="column right">Completing a task</div>
         </div>
     </fieldset>  
-
-</form>
 
 </section></body></html>
